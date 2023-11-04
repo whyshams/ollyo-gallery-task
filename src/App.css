@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
+  font-family: "Poppins";
+}
+
+.card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin: 50px;
+  border-radius: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.featured img {
+  width: 400px;
+  height: 400px;
+  border: 1px solid orange;
+}
+.photos img {
+  margin: 40px;
+  width: 200px;
+  height: 200px;
+}
+h1 {
+  font-size: 30px;
+}
+.react-icons {
+  color: green;
+}
