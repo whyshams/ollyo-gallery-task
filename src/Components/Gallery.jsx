@@ -43,7 +43,7 @@ const Gallery = ({ photos }) => {
   /* This useEffect hook was used only with the purpose to make the
   gallery risponsible, instead of media query in css i have used
   inner width of javascript window object and updating the state 
-  windowWidth to in every time the browser is resized */
+  windowWidth to in every time the browser is resized*/
   useEffect(() => {
     const updateWindowWidth = () => {
       setWindowWidth(window.innerWidth);
