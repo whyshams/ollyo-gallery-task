@@ -1,7 +1,7 @@
 import React from "react";
 import { useDrag, useDrop } from "react-dnd";
 import { useMyContext } from "../ContextApi/Contexts";
-import { RiVerifiedBadgeLine } from "react-icons/ri";
+
 const Photos = ({ movePhoto, url, index }) => {
   const { selectedPhotos, setSelectedPhotos } = useMyContext();
 

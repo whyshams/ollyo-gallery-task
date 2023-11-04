@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 /* A react js drag and drop library for getting on drop and on drag data */
 import { DndProvider } from "react-dnd";
 import Photos from "./Photos";
@@ -12,6 +12,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 
 const Gallery = ({ photos }) => {
   const [photoData, setPhotoData] = useState(photos);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const { selectedPhotos, setSelectedPhotos } = useMyContext();
 
   /* This movePhoto function deletes the image from 
@@ -39,6 +40,19 @@ const Gallery = ({ photos }) => {
     console.log(selectedPhotos);
   };
 
+  useEffect(() => {
+    const updateWindowWidth = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", updateWindowWidth);
+
+    return () => {
+      window.removeEventListener("resize", updateWindowWidth);
+    };
+  }, []);
+  console.log(windowWidth);
+
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="flex justify-center py-4">
@@ -49,7 +63,19 @@ const Gallery = ({ photos }) => {
         </h2>
       </div>
       {/* Component for rendering photos */}
-      <div className="lg:grid lg:grid-cols-6 lg:grid-rows-3 md:flex md:flex-wrap md:justify-center">
+      <div
+        className={
+          windowWidth > 1500 && windowWidth < 1800
+            ? "grid grid-cols-6"
+            : windowWidth > 1280 && windowWidth < 1499
+            ? "grid grid-cols-5"
+            : windowWidth > 1001 && windowWidth < 1279
+            ? "grid grid-cols-4"
+            : windowWidth < 1000
+            ? " flex flex-wrap justify-center "
+            : " flex flex-wrap justify-center "
+        }
+      >
         {photoData.map((photo, index) => (
           <div
             className={
