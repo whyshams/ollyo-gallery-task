@@ -1,8 +1,19 @@
-# React + Vite
+# Thank You, Ollyo, for the opportunity 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I have created the gallery that has been assigned to me as a task in Ollyo's interview process. I have tried commenting on almost every aspect of the code in the code as much as I could to let you more aware of my thinking and working process. I have tried to stick to the requirements as much as possible and did not use any image library. However, I have used react-dnd for drag and drop data collection and tailwind CSS for easier CSS designing.
 
-Currently, two official plugins are available:
+# This website is hosted 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This website is hosted using Vercel from github, hence, the production will be updated as soon as I push a commit. Vercel can also be used to connect to public domains by changing dns address.
+The image gallery is hosted here : https://ollyo-gallery-task.vercel.app/
+
+#Run this webapp locally 
+
+1. Clone the repository using "git clone <URL>" command
+2. install all the dipendancy using "npm install"
+3. run the webapp using "npm run dev" command
+
+
+
+
+
