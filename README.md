@@ -1,6 +1,6 @@
 # Thank You, Ollyo, for the opportunity 
 
-I have created the gallery that has been assigned to me as a task in Ollyo's interview process. I have tried commenting on almost every aspect of the code in the code as much as I could to let you more aware of my thinking and working process. I have tried to stick to the requirements as much as possible and did not use any image library. However, I have used react-dnd for drag and drop data collection and tailwind CSS for easier CSS designing. I have gone the extra mile to make the photo gallery responsive for all devices. 
+I have created the gallery that has been assigned to me as a task in Ollyo's interview process. I have tried commenting on almost every aspect of the code in the code as much as I could to let you more aware of my thinking and working process. I have tried to stick to the requirements as much as possible and did not use any image library. However, I have used react-dnd for drag and drop data collection and tailwind CSS for easier CSS designing. I have gone the extra mile to make the photo gallery responsive for all devices. I have commented adequately in my code to convey my reason for using the methods I have used to create the photo library.
 
 # This website is hosted 
 
